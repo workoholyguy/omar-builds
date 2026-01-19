@@ -1,0 +1,72 @@
+---
+title: "Geospatial Revenue Analytics"
+slug: "geospatial-analytics"
+type: "data"
+roles:
+  - data
+  - ml
+status: "demo"
+featured: true
+stack:
+  - Python
+  - Pandas
+  - GeoPandas
+  - SQL
+  - Scikit-learn
+highlights:
+  - "65% high-confidence customer geolocation coverage"
+  - "Derived 6 sales territories capturing 75% of revenue"
+  - "End-to-end pipeline from QuickBooks exports to ML analysis"
+links:
+  github: "https://github.com/workoholyguy/geospatial_clustering_seasonal_analysis"
+dates:
+  start: "2025-09"
+  end: "2025-12"
+tags:
+  - python
+  - pandas
+  - geopandas
+  - sql
+  - clustering
+  - data-science
+  - time-series
+description: "End-to-end analytics pipeline converting raw QuickBooks exports into geospatial and time-series analysis, deriving sales territories and revenue insights."
+---
+
+## Overview
+
+A comprehensive data analytics project that transforms raw financial data into actionable business intelligence through geospatial clustering and time-series analysis.
+
+## Problem
+
+Raw QuickBooks exports contain valuable business data but require significant processing to extract insights about customer distribution, revenue patterns, and optimal sales territories.
+
+## Solution
+
+Built an end-to-end analytics pipeline that normalizes raw data, recovers customer locations, identifies sales territories, and analyzes seasonal revenue patterns.
+
+## My Contributions
+
+- Built complete data pipeline converting QuickBooks exports to normalized relational tables
+- Implemented multi-stage geolocation resolution achieving 65% high-confidence coverage
+- Validated clustering approach using Hopkins statistic
+- Derived 6 operational sales territories capturing 75% of total revenue
+- Performed seasonal decomposition to identify demand cycles
+
+## Technical Details
+
+Python with Pandas handles data wrangling and transformation. GeoPandas enables spatial analysis and visualization. Scikit-learn provides clustering algorithms. SQL manages the normalized relational structure.
+
+## Dataset & Evaluation
+
+**Dataset:** Real QuickBooks transaction exports with customer and invoice data
+
+**Evaluation:** Hopkins statistic for cluster tendency, silhouette scores for cluster quality
+
+**Results:** 6 distinct territories, one region accounting for ~75% of revenue
+
+## Challenges & Tradeoffs
+
+**Challenge:** Many customer records lacked explicit geolocation data.
+
+**Solution:** Implemented multi-stage resolution using address parsing, zip code lookups, and city-level approximations, achieving 65% high-confidence coverage.

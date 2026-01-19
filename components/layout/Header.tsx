@@ -59,7 +59,7 @@ export function Header() {
             href="/"
             className="nav-item text-lg font-semibold text-foreground hover:text-accent transition-colors"
           >
-            Omar Adjei
+            Omar Madjitov
           </Link>
 
           {/* Desktop Navigation */}

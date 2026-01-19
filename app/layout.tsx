@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Omar Adjei | Software Engineer",
-    template: "%s | Omar Adjei",
+    default: "Omar Madjitov | Software Engineer",
+    template: "%s | Omar Madjitov",
   },
   description:
-    "I build production web apps and data/ML systems that turn messy problems into working software.",
+    "Software engineer building reliable web applications and data systems. Full-stack development, ML pipelines, and production deployments.",
   keywords: [
     "Software Engineer",
     "Full Stack Developer",
@@ -31,30 +31,30 @@ export const metadata: Metadata = {
     "TypeScript",
     "Python",
   ],
-  authors: [{ name: "Omar Adjei" }],
-  creator: "Omar Adjei",
+  authors: [{ name: "Omar Madjitov" }],
+  creator: "Omar Madjitov",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://omaradjei.com",
-    siteName: "Omar Adjei",
-    title: "Omar Adjei | Software Engineer",
+    url: "https://omarmadjitov.com",
+    siteName: "Omar Madjitov",
+    title: "Omar Madjitov | Software Engineer",
     description:
-      "I build production web apps and data/ML systems that turn messy problems into working software.",
+      "Software engineer building reliable web applications and data systems. Full-stack development, ML pipelines, and production deployments.",
     images: [
       {
         url: "/images/og/default.png",
         width: 1200,
         height: 630,
-        alt: "Omar Adjei - Software Engineer",
+        alt: "Omar Madjitov - Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Omar Adjei | Software Engineer",
+    title: "Omar Madjitov | Software Engineer",
     description:
-      "I build production web apps and data/ML systems that turn messy problems into working software.",
+      "Software engineer building reliable web applications and data systems. Full-stack development, ML pipelines, and production deployments.",
     images: ["/images/og/default.png"],
   },
   robots: {

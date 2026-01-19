@@ -11,19 +11,19 @@ gsap.registerPlugin(ScrollTrigger);
 const skillCategories = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "GSAP"],
+    skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Python", "PostgreSQL", "REST APIs", "GraphQL"],
+    skills: ["Node.js", "Express.js", "Python", "PostgreSQL", "REST APIs"],
   },
   {
     title: "Data & ML",
-    skills: ["Python", "Pandas", "SQL", "Scikit-learn", "TensorFlow"],
+    skills: ["Pandas", "NumPy", "Scikit-learn", "PyTorch", "TensorFlow"],
   },
   {
-    title: "DevOps",
-    skills: ["Git", "Docker", "Vercel", "AWS", "CI/CD"],
+    title: "Cloud & DevOps",
+    skills: ["AWS", "Supabase", "Docker", "Git/GitHub", "CI/CD"],
   },
 ];
 
@@ -33,7 +33,6 @@ export function Skills() {
   useGSAP(() => {
     if (!sectionRef.current) return;
 
-    // Animate section header
     gsap.fromTo(
       sectionRef.current.querySelector(".section-header"),
       { opacity: 0, y: 40 },
@@ -50,7 +49,6 @@ export function Skills() {
       }
     );
 
-    // Animate skill cards with stagger
     gsap.fromTo(
       sectionRef.current.querySelectorAll(".skill-card"),
       { opacity: 0, y: 30, scale: 0.95 },
@@ -69,7 +67,6 @@ export function Skills() {
       }
     );
 
-    // Animate individual skill items
     sectionRef.current.querySelectorAll(".skill-card").forEach((card) => {
       const items = card.querySelectorAll(".skill-item");
       gsap.fromTo(

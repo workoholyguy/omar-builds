@@ -12,17 +12,17 @@ gsap.registerPlugin(ScrollTrigger);
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/omaradjei",
+    href: "https://github.com/workoholyguy",
     icon: Github,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/omaradjei",
+    href: "https://www.linkedin.com/in/omar-madjitov/",
     icon: Linkedin,
   },
   {
     name: "Email",
-    href: "mailto:omar@example.com",
+    href: "mailto:omadjitov1@icloud.com",
     icon: Mail,
   },
 ];
@@ -86,7 +86,7 @@ export function Footer() {
           {/* Copyright */}
           <div className="footer-item mt-8 pt-8 border-t border-neutral-800/50">
             <p className="text-xs text-neutral-500 text-center">
-              © {new Date().getFullYear()} Omar Adjei. All rights reserved.
+              © {new Date().getFullYear()} Omar Madjitov. All rights reserved.
             </p>
           </div>
         </div>

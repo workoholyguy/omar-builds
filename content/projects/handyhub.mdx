@@ -1,0 +1,62 @@
+---
+title: "HandyHub"
+slug: "handyhub"
+type: "fullstack"
+roles:
+  - frontend
+  - backend
+status: "live"
+featured: true
+stack:
+  - React
+  - TypeScript
+  - Supabase
+  - Tailwind CSS
+highlights:
+  - "Community Q&A platform with 50K+ monthly active users"
+  - "Authentication, voting, rewards, and threaded discussions"
+  - "Supabase for auth flows and relational data modeling"
+links:
+  github: "https://github.com/workoholyguy/handyhub"
+  live: "https://holyhandyhub.netlify.app/"
+dates:
+  start: "2025-06"
+  end: "2025-08"
+tags:
+  - react
+  - typescript
+  - supabase
+  - tailwind
+  - fullstack
+description: "A community-driven Q&A platform with user authentication, voting, rewards, and threaded discussions supporting 50K+ monthly active users."
+---
+
+## Overview
+
+HandyHub is a community-driven Q&A platform that enables users to ask questions, provide answers, and engage in discussions with voting and reward mechanisms.
+
+## Problem
+
+Online communities often struggle with content quality and user engagement. Poor ranking systems and lack of incentives lead to low-quality responses and decreased participation.
+
+## Solution
+
+Built a platform with authentication, voting logic, and a rewards system that incentivizes quality contributions and surfaces the best content.
+
+## My Contributions
+
+- Built complete Q&A platform with authentication and private routes
+- Implemented voting, rewards, and threaded discussion features
+- Created search, sorting, and filtering with responsive UI patterns
+- Handled Supabase auth flows, session persistence, and relational data modeling
+- Designed database schema for posts, answers, and user profiles
+
+## Technical Details
+
+React with TypeScript provides type-safe frontend development. Supabase handles authentication, real-time subscriptions, and PostgreSQL database. Tailwind CSS enables rapid, consistent styling.
+
+## Challenges & Tradeoffs
+
+**Challenge:** Implementing real-time vote counts without excessive database queries.
+
+**Solution:** Used Supabase real-time subscriptions for live updates while caching vote counts locally to reduce reads.

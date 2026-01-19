@@ -1,0 +1,76 @@
+---
+title: "Brain Tumor Detection (YOLOv8)"
+slug: "brain-tumor-detection"
+type: "ml"
+roles:
+  - ml
+  - data
+status: "demo"
+featured: true
+stack:
+  - Python
+  - PyTorch
+  - YOLOv8
+  - NumPy
+  - OpenCV
+highlights:
+  - "Achieved mAP@50 = 0.905, IoU = 0.73, pixel accuracy = 0.91"
+  - "Diagnosed dataset-label mismatch and reframed the problem"
+  - "Built reproducible training pipeline with COCO↔YOLO converters"
+links:
+  github: "https://github.com/workoholyguy/UNET-vs-YOLO-Brain-Tumor-Detection-ML"
+dates:
+  start: "2025-09"
+  end: "2025-11"
+metrics:
+  accuracy: "0.905 mAP@50"
+  latency: "IoU 0.73"
+tags:
+  - python
+  - pytorch
+  - yolov8
+  - deep-learning
+  - computer-vision
+  - medical-imaging
+description: "Medical imaging object detection system using YOLOv8 for brain tumor detection, achieving 0.905 mAP@50 with reproducible training pipelines."
+---
+
+## Overview
+
+A machine learning pipeline for detecting brain tumors in medical imaging using YOLOv8 object detection, with emphasis on reproducibility and proper problem framing.
+
+## Problem
+
+Medical imaging datasets often have annotation issues. The original dataset was labeled for semantic segmentation but contained rectangular annotation artifacts that made it unsuitable for that task.
+
+## Solution
+
+Diagnosed the dataset-label mismatch and reframed the task from semantic segmentation to object detection (bounding boxes), which better matched the actual annotation structure.
+
+## My Contributions
+
+- Identified dataset annotation issues and correctly reframed the ML problem
+- Built fully reproducible training and inference pipeline
+- Developed COCO↔YOLO format converters for data preprocessing
+- Created evaluation scripts and visual diagnostics
+- Trained YOLOv8 model on Apple Silicon (MPS backend)
+
+## Dataset & Evaluation
+
+**Dataset:** Medical brain MRI scans with tumor annotations
+
+**Evaluation:** Standard object detection metrics including mAP@50, IoU, and pixel accuracy
+
+**Results:** mAP@50 = 0.905, mean IoU = 0.73, pixel accuracy = 0.91
+
+## Limitations
+
+- Model trained on specific MRI scan types; may not generalize to different imaging protocols
+- Requires careful preprocessing for new data
+- Bounding box detection doesn't provide precise tumor boundaries
+
+## Challenges & Tradeoffs
+
+**Challenge:** Original semantic segmentation approach produced poor results due to annotation artifacts.
+
+**Solution:** Recognized that rectangular annotations were better suited for object detection; switched to YOLOv8 bounding box approach, dramatically improving results.

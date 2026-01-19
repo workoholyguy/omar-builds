@@ -1,0 +1,64 @@
+---
+title: "Job Ledger"
+slug: "job-ledger"
+type: "fullstack"
+roles:
+  - frontend
+  - backend
+status: "live"
+featured: true
+stack:
+  - React
+  - Vite
+  - Express
+  - PostgreSQL
+  - JWT
+highlights:
+  - "Full-stack job tracking platform with JWT authentication"
+  - "Analytics dashboards improving organization efficiency by 25-40%"
+  - "Production deployed on Netlify (frontend) and Render (backend)"
+links:
+  github: "https://github.com/workoholyguy/job-ledger"
+  live: "https://jobledger.app/"
+dates:
+  start: "2025-10"
+  end: "2025-12"
+tags:
+  - react
+  - vite
+  - express
+  - postgresql
+  - jwt
+  - fullstack
+description: "A full-stack job application tracking platform with user-scoped CRUD, analytics dashboards, and external job-feed ingestion."
+---
+
+## Overview
+
+Job Ledger is a comprehensive job application tracking platform designed to help job seekers manage their applications, interviews, and follow-ups in a single dashboard.
+
+## Problem
+
+Managing dozens of job applications across multiple platforms leads to fragmented tracking, missed follow-ups, and poor visibility into the job search pipeline.
+
+## Solution
+
+Built a centralized tracking system with user authentication, protected routes, and analytics views that consolidate all application data in one place.
+
+## My Contributions
+
+- Designed and built full-stack architecture with React frontend and Express backend
+- Implemented JWT-based authentication with user-scoped CRUD operations
+- Built analytics dashboards for tracking application status and progress
+- Integrated external job-feed ingestion (Greenhouse/Indeed-style APIs)
+- Deployed production frontend on Netlify and backend on Render with CI-friendly builds
+
+## Technical Details
+
+The frontend uses React with Vite for fast development and optimized builds. The backend runs on Express.js with PostgreSQL for data persistence. JWT tokens handle authentication with protected routes on both client and server.
+
+## Challenges & Tradeoffs
+
+**Challenge:** Handling multiple API formats from different job boards for feed ingestion.
+
+**Solution:** Built a flexible adapter layer that normalizes data from various sources into a consistent internal format.

@@ -59,14 +59,14 @@ export function Contact() {
             Let&apos;s work together
           </h2>
           <p className="contact-text text-neutral-400 text-lg mb-8 leading-relaxed">
-            I&apos;m currently looking for new opportunities. Whether you have a
-            question or just want to say hi, I&apos;ll do my best to get back to
-            you.
+            I&apos;m seeking roles where I can build software people rely on,
+            collaborate with experienced teammates, and help ship real products.
+            If that sounds like your team, let&apos;s connect.
           </p>
           <Button
             variant="primary"
             size="lg"
-            href="mailto:omar@example.com"
+            href="mailto:omadjitov1@icloud.com"
             external
             className="contact-button"
           >

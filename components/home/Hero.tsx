@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { FileText, Github, Linkedin, Mail, ArrowDown } from "lucide-react";
@@ -8,16 +8,16 @@ import { Container, Button } from "@/components/ui";
 
 const proofItems = [
   "React / Next.js / TypeScript",
-  "Python / SQL / Data",
-  "Deployed Production Apps",
-  "ML / Research Projects",
+  "Python / ML / Data Science",
+  "PostgreSQL / Supabase / AWS",
+  "Production Apps Deployed",
 ];
 
 const ctaLinks = [
   { label: "Resume", href: "/resume", icon: FileText },
-  { label: "GitHub", href: "https://github.com/omaradjei", icon: Github, external: true },
-  { label: "LinkedIn", href: "https://linkedin.com/in/omaradjei", icon: Linkedin, external: true },
-  { label: "Email", href: "mailto:omar@example.com", icon: Mail, external: true },
+  { label: "GitHub", href: "https://github.com/workoholyguy", icon: Github, external: true },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/omar-madjitov/", icon: Linkedin, external: true },
+  { label: "Email", href: "mailto:omadjitov1@icloud.com", icon: Mail, external: true },
 ];
 
 export function Hero() {
@@ -130,7 +130,7 @@ export function Hero() {
 
           {/* Title */}
           <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 tracking-tight">
-            Omar Adjei
+            Omar Madjitov
             <span ref={cursorRef} className="text-accent">
               .
             </span>
@@ -138,16 +138,16 @@ export function Hero() {
 
           {/* Subtitle */}
           <p className="hero-subtitle text-2xl md:text-3xl lg:text-4xl text-neutral-400 mb-8 leading-relaxed">
-            I build production web apps and data systems
+            I build reliable software and data systems
             <br className="hidden md:block" />
             <span className="text-neutral-500">
-              {" "}that turn messy problems into working software.
+              {" "}that others can reason about and extend.
             </span>
           </p>
 
           {/* Proof Items */}
           <div className="flex flex-wrap gap-x-6 gap-y-2 mb-10">
-            {proofItems.map((item, index) => (
+            {proofItems.map((item) => (
               <div
                 key={item}
                 className="proof-item flex items-center gap-2 text-sm text-neutral-400"

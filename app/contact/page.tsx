@@ -9,21 +9,21 @@ import { Container, Section, Button } from "@/components/ui";
 const socialLinks = [
   {
     name: "Email",
-    href: "mailto:omar@example.com",
+    href: "mailto:omadjitov1@icloud.com",
     icon: Mail,
-    description: "omar@example.com",
+    description: "omadjitov1@icloud.com",
   },
   {
     name: "GitHub",
-    href: "https://github.com/omaradjei",
+    href: "https://github.com/workoholyguy",
     icon: Github,
-    description: "@omaradjei",
+    description: "@workoholyguy",
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/omaradjei",
+    href: "https://www.linkedin.com/in/omar-madjitov/",
     icon: Linkedin,
-    description: "/in/omaradjei",
+    description: "/in/omar-madjitov",
   },
 ];
 
