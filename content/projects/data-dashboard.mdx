@@ -1,0 +1,66 @@
+---
+title: "Analytics Dashboard"
+slug: "data-dashboard"
+type: "data"
+roles:
+  - frontend
+  - data
+status: "live"
+featured: true
+stack:
+  - React
+  - D3.js
+  - Python
+  - PostgreSQL
+  - Redis
+highlights:
+  - "Visualizes 1M+ data points with interactive charts"
+  - "Sub-second query response with Redis caching"
+  - "Custom D3.js visualizations for geospatial data"
+links:
+  github: "https://github.com/omaradjei/analytics-dashboard"
+  live: "https://dashboard-demo.com"
+dates:
+  start: "2024-01"
+  end: "2024-04"
+tags:
+  - react
+  - d3
+  - python
+  - postgresql
+  - redis
+  - data-visualization
+description: "An interactive analytics dashboard for visualizing large-scale business metrics and geospatial data."
+---
+
+## Overview
+
+A high-performance analytics dashboard that transforms raw business data into actionable insights. Features interactive visualizations, real-time updates, and drill-down capabilities for exploring metrics.
+
+## Problem
+
+Business stakeholders needed a way to explore sales data across regions and time periods without waiting for manual report generation. Existing tools couldn't handle the data volume efficiently.
+
+## Solution
+
+Built a custom dashboard with optimized data pipelines and caching strategies. The frontend uses D3.js for custom visualizations that can render millions of data points smoothly.
+
+## My Contributions
+
+- Designed data aggregation pipeline with Python and PostgreSQL
+- Implemented Redis caching layer for frequently accessed queries
+- Built custom D3.js charts including choropleth maps and time series
+- Created responsive layout with drill-down filtering
+- Optimized frontend rendering for large datasets using virtualization
+
+## Technical Details
+
+The backend aggregates raw transaction data into pre-computed rollups at various time granularities. Redis caches these aggregations with intelligent invalidation on new data. The frontend uses React with D3.js for rendering, employing canvas for dense visualizations.
+
+## Challenges & Tradeoffs
+
+**Challenge:** Rendering 1M+ points without browser freezing.
+
+**Solution:** Implemented data decimation and canvas-based rendering. Points aggregate at zoom levels below threshold.
+
+**Tradeoff:** Chose pre-aggregation over real-time queries, accepting up to 5-minute data delay for significant performance gains.
